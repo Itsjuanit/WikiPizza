@@ -1,0 +1,290 @@
+/**
+COLORES:
+    FUENTE: MARRON - #803737
+    BOTONES: MARRON OSCURO - #805D5D
+    PAGE: ROSA - #FFBABA
+    PAGE 1: CORAL - #FF6D6D
+/**
+
+/*Aqui comienza mi codigo CSS */
+/*@font-face {
+    font-family: 'Nunito', sans-serif;
+}*/
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+body{
+    background-image: url(assets/img/fondopizza.png);
+}
+
+a {
+    text-decoration: none;
+    color: #805D5D;
+}
+
+img {
+    max-width: 100%;
+}
+
+.titulo {
+    text-transform: uppercase;
+}
+
+.contenedorperfil {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidoperfil {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #803737;
+    max-width: 90%;
+    width: 100%;
+    height: 40vh;
+    background-color: #FFBABA;
+    box-shadow: 8px 8px 22px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    position: relative;
+    /*overflow-y: scroll;*/
+    overflow-x: hidden;
+    padding: 1em;
+}
+
+.fotoperfil{
+    margin: 1em;
+    float: left;
+    height: 150px;
+    width: 150px;
+    align-items: top;
+    border-radius: 100%;
+}
+
+.contenedor {
+    /*background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenido {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #803737;
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: #fff;
+    box-shadow: 8px 8px 22px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    position: relative;
+    /*overflow-y: scroll;*/
+    overflow-x: hidden;
+    padding: 1em;
+}
+
+td {
+    display: block;
+}
+
+td:nth-last-of-type(5) {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #803737;
+}
+
+th {
+    display: none;
+}
+
+.accion {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close {
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: #b12a5b;
+    display: inline-block;
+    box-shadow: 1px 4px 7px 0px rgba(0, 0, 0, 0.75);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo {
+    justify-content: center;
+    text-align: center;
+    padding: px;
+}
+
+.nav-menu {
+    display: flex;
+    padding-right: 200px;
+    justify-content: flex-end;
+}
+
+.navnav {
+    line-height: 1.8em;
+    font-weight: 300;
+    font-size: medium;
+    font-display: bold;
+}
+
+.tabla {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.fa-star {
+    color: black;
+
+}
+
+.tabla td,
+.tabla th {
+    padding: 1em;
+    text-align: left;
+
+}
+
+.tabla tr:nth-child(even) {
+    background-color: #FFBABA;
+}
+
+.titulo-item {
+    /**border-bottom-style: solid;
+    border-width: 2px;
+    border-color: #803737;
+    TODO ESTE CODIGO SE SIMPLIFICA COMO SE MUESTRA ABAJO
+    /**/
+    border-bottom: solid 2px #803737;
+    padding: 0.5em;
+    font-size: 2em;
+}
+
+.posicion {
+    background-color: #803737;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.texto {
+    align-items: top;
+    padding: 1em 1em 0em 1em;
+}
+
+.direccion {
+    font-weight: bold;
+    color: #cf556c;
+    font-size: 1em;
+    align-items: top;
+    margin-top: 0.5em;
+}
+
+.main-image {
+    margin: 1em;
+    float: left;
+    height: 250px;
+    width: 250px;
+    align-items: top;
+}
+
+.footer-redes {
+    background-color: #ffffff;
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-instagram {
+    font-size: 2.5em;
+    padding: 0.5em;
+    color: #b12a5b;
+}
+
+.fa-instagram:hover {
+    cursor: pointer;
+}
+
+@media (min-height: 550px) {
+    .contenido {
+        height: 500px;
+    }
+}
+
+@media (min-width: 900px) {
+    th {
+        display: table-cell;
+    }
+
+    td {
+        display: table-cell;
+        width: auto;
+    }
+
+    td:nth-last-of-type(5) {
+        font-size: 1em;
+    }
+
+    .contenido {
+        padding: 1.8em;
+    }
+}
+
+.footer{
+    width: 97%;
+    height: 60px;
+    text-align: center;
+    padding: 1em;
+}
+
+.boton {
+    color: #fff !important;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.2em;
+    background: #f58eb2;
+    border: 2px solid;
+    border-color: #f58eb2;
+    position: relative;
+    border-radius: 42px 42px 42px 42px;
+}
+
+.boton:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 1s ease;
+    border-radius: 42px 42px 42px 42px;
+}
+
+.boton:hover:before {
+    width: 100%;
+}
