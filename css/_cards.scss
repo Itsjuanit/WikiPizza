@@ -1,0 +1,76 @@
+        .main {
+            .contenedor {
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .contenido {
+                    font-family: $main-font;
+                    color: $color-principal;
+                    max-width: 960px;
+                    width: 100%;
+                    height: 80vh;
+                    background-color: $color-casiBlanco;
+                    box-shadow: 8px 8px 22px 0px rgba(0, 0, 0, 0.75);
+                    border-radius: 4px;
+                    position: relative;
+                    overflow-x: hidden;
+                    padding: 1em;
+
+                    .titulo-item {
+                        border-bottom: solid 2px $color-principal;
+                        padding: 0.5em;
+                        font-size: 2em;
+
+                        .posicion {
+                            background-color: $color-principal;
+                            color: $color-casiBlanco;
+                            padding: 10px;
+                            border-radius: 4px;
+                            margin-right: 0.5em;
+                        }
+                    }
+
+                    .main-image {
+                        margin: 1em;
+                        float: left;
+                        height: 250px;
+                        width: 250px;
+                        align-items: top;
+                    }
+
+                    .texto {
+                        align-items: top;
+                        padding: 1em 1em 0em 1em;
+
+                        .direccion {
+                            font-weight: bold;
+                            color: #cf556c;
+                            font-size: 1em;
+                            align-items: top;
+                            margin-top: 0.5em;
+                        }
+
+                    }
+
+                    .footer-redes {
+                        margin: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .insta {
+                            font-size: 2rem;
+                            color: $color-principal;
+
+
+                            .fa-instagram:hover {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }

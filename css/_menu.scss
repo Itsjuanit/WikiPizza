@@ -1,0 +1,49 @@
+.header {
+    min-width: 100vw;
+    min-height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1em;
+    padding-right: 2em;
+    background-color: $color-negro;
+
+    &-nav {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+
+        .internos {
+            font-family: $main-font;
+            font-size: 1.4rem;
+            position: relative;
+            display: inline-block;
+            padding: 1rem 0.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+            color: $color-casiBlanco;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 100%;
+                display: inline-block;
+                height: 0.1rem;
+                background: $color-principal;
+                transition: all 0.25s cubic-bezier(1, 0.1, 0.16, 0.9);
+            }
+
+            &:hover {
+                color: $color-casiBlanco;
+            }
+
+            &:hover::after {
+                right: 0;
+                height: 1px;
+                background: $color-principal;
+            }
+        }
+    }
+}

@@ -1,28 +1,11 @@
+@import 'var';
 *,
 *:after,
 *:before {
     box-sizing: border-box;
 }
 
-/*BREAK POINTS*/
-$minimobile-breakpoint: 320px;
-$mobile-breakpoint: 568px;
-$tablet-breakpoint: 768px;
-$desktop-breakpoint: 1280px;
 
-/* Color Theme Swatches in Hex */
-$color-casiBlanco: #fff;
-$color-principal: #d14136;
-$color-secundario: #f1f518;
-$color-grisTopo: #737373;
-$color-grisOscuro: #404040;
-$color-negro: #222;
-
-/*FONT*/
-$main-font: 'Lato',
-sans-serif;
-$second-font:'Pacifico',
-cursive;
 
 
 html {
@@ -54,12 +37,12 @@ html {
             padding-top: 1em;
             padding-right: 2em;
             background-color: $color-negro;
-
+        
             &-nav {
                 margin-bottom: 10px;
                 display: flex;
                 justify-content: flex-end;
-
+        
                 .internos {
                     font-family: $main-font;
                     font-size: 1.4rem;
@@ -70,7 +53,7 @@ html {
                     color: inherit;
                     transition: all 0.2s;
                     color: $color-casiBlanco;
-
+        
                     &::after {
                         content: "";
                         position: absolute;
@@ -82,11 +65,11 @@ html {
                         background: $color-principal;
                         transition: all 0.25s cubic-bezier(1, 0.1, 0.16, 0.9);
                     }
-
+        
                     &:hover {
                         color: $color-casiBlanco;
                     }
-
+        
                     &:hover::after {
                         right: 0;
                         height: 1px;
@@ -135,7 +118,7 @@ html {
                 }
             }
 
-            .cardsMain{
+            .cardsMain {
                 min-width: 100vh;
                 min-height: 100vh;
                 background-color: $color-negro;
@@ -155,7 +138,7 @@ html {
                     width: 600px;
                     left: calc(50% - 300px);
                     display: flex;
-    
+
                     .card {
                         display: flex;
                         height: 350px;
@@ -166,15 +149,15 @@ html {
                         transition: 0.4s ease-out;
                         position: relative;
                         left: 0px;
-        
+
                         &:not(:first-child) {
                             margin-left: -50px;
                         }
-        
+
                         &:hover {
                             transform: translateY(-20px);
                             transition: 0.4s ease-out;
-        
+
                             ~ {
                                 .card {
                                     position: relative;
@@ -182,44 +165,44 @@ html {
                                     transition: 0.4s ease-out;
                                 }
                             }
-        
+
                             .filledbar {
                                 width: 120px;
                                 transition: 0.4s ease-out;
                             }
-        
+
                             .stroke {
                                 stroke-dashoffset: 100;
                                 transition: 0.6s ease-out;
                             }
                         }
-        
+
                         &:nth-child(1) {
                             background-image: url(/assets/img/fristpizza.jpg);
                             background-size: cover;
                             background-position: center;
                         }
-        
+
                         &:nth-child(2) {
                             background-image: url(/assets/img/secondpizza.jpg);
                             background-size: cover;
                             background-position: center;
                         }
-        
+
                         &:nth-child(3) {
                             background-image: url(/assets/img/thirdPizza.jpg);
                             background-size: cover;
                             background-position: center;
                         }
-        
+
                         &:nth-child(4) {
                             background-image: url(/assets/img/quarterpizza.jpg);
                             background-size: cover;
                             background-position: center;
                         }
-        
+
                         .title {
-                            color:$color-casiBlanco;
+                            color: $color-casiBlanco;
                             font-weight: 500;
                             position: absolute;
                             left: 20px;
@@ -227,27 +210,46 @@ html {
                             font-family: $main-font;
                             font-size: 1.4rem;
                         }
-        
+
                         .bar {
                             position: absolute;
                             top: 100px;
                             left: 20px;
                             height: 5px;
                             width: 150px;
-        
-        
-                            
+
+
+
                         }
+
                         .circle {
                             position: absolute;
-        
+
                             padding: 150px 45px 45px 45px;
-        
+
                             img {
                                 border-radius: 100%;
                             }
                         }
                     }
+                }
+            }
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-negro;
+            padding: 30px;
+
+            &-its {
+                color: $color-casiBlanco;
+                font-size: 1.2rem;
+
+                a {
+                    text-decoration: none;
+                    color: $color-casiBlanco;
                 }
             }
         }

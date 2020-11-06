@@ -1,0 +1,25 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/*BREAK POINTS*/
+$minimobile-breakpoint: 320px;
+$mobile-breakpoint: 568px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+/* Color Theme Swatches in Hex */
+$color-casiBlanco: #fff;
+$color-principal: #d14136;
+$color-secundario: #f1f518;
+$color-grisTopo: #737373;
+$color-grisOscuro: #404040;
+$color-negro: #222;
+
+/*FONT*/
+$main-font: 'Lato',
+sans-serif;
+$second-font:'Pacifico',
+cursive;

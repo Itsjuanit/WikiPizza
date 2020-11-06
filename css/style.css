@@ -8,6 +8,13 @@
 /*BREAK POINTS*/
 /* Color Theme Swatches in Hex */
 /*FONT*/
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -276,5 +283,29 @@ html body .main .cardsMain .container .card .circle {
 
 html body .main .cardsMain .container .card .circle img {
   border-radius: 100%;
+}
+
+html body .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #222;
+  padding: 30px;
+}
+
+html body .footer-its {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+html body .footer-its a {
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
