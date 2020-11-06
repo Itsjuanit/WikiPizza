@@ -1,0 +1,139 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+/*BREAK POINTS*/
+$minimobile-breakpoint: 320px;
+$mobile-breakpoint: 568px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1280px;
+
+/* Color Theme Swatches in Hex */
+$color-casiBlanco: #fff;
+$color-principal: #d14136;
+$color-secundario: #f1f518;
+$color-grisTopo: #737373;
+$color-grisOscuro: #404040;
+$color-negro: #222;
+
+/*FONT*/
+$main-font: 'Lato',
+sans-serif;
+$second-font:'Pacifico',
+cursive;
+
+
+html {
+    scroll-behavior: smooth;
+    overflow: hidden;
+
+    @media (max-width: $mobile-breakpoint) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    @media (max-width: $mobile-breakpoint) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    body {
+        font-family: $main-font;
+
+        .header {
+            min-width: 100vw;
+            min-height: 40px;
+            display: flex;
+            justify-content: flex-end;
+            padding-top: 1em;
+            padding-right: 2em;
+            background-color: $color-negro;
+
+            &-nav {
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: flex-end;
+
+                .internos {
+                    font-family: $main-font;
+                    font-size: 1.4rem;
+                    position: relative;
+                    display: inline-block;
+                    padding: 1rem 0.5rem;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: all 0.2s;
+                    color: $color-casiBlanco;
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 100%;
+                        display: inline-block;
+                        height: 0.1rem;
+                        background: $color-principal;
+                        transition: all 0.25s cubic-bezier(1, 0.1, 0.16, 0.9);
+                    }
+
+                    &:hover {
+                        color: $color-casiBlanco;
+                    }
+
+                    &:hover::after {
+                        right: 0;
+                        height: 1px;
+                        background: $color-principal;
+                    }
+                }
+            }
+        }
+
+        .main {
+
+            &-page {
+                background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(170, 170, 170, 0.11)), url(/assets/img/fristpizza.jpg);
+                background-image: url(/assets/img/fristpizza.jpg);
+                background-size: cover;
+                background-position: center;
+                color: $color-casiBlanco;
+                min-height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .secondary-text {
+                    font-family: $second-font;
+                    font-size: 5rem;
+                    margin-bottom: 10px;
+                }
+
+                .third-text {
+                    font-family: $second-font;
+                    font-size: 3rem;
+                    margin-bottom: 10px;
+                }
+
+                .principal-text {
+                    font-family: $main-font;
+                    font-size: 8rem;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+
+                .paragraph {
+                    font-family: $main-font;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

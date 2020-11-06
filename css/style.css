@@ -1,0 +1,158 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*BREAK POINTS*/
+/* Color Theme Swatches in Hex */
+/*FONT*/
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+@media (max-width: 568px) {
+  html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 568px) {
+  html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+}
+
+html body {
+  font-family: "Lato", sans-serif;
+}
+
+html body .header {
+  min-width: 100vw;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 1em;
+  padding-right: 2em;
+  background-color: #222;
+}
+
+html body .header-nav {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+html body .header-nav .internos {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #fff;
+}
+
+html body .header-nav .internos::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  display: inline-block;
+  height: 0.1rem;
+  background: #d14136;
+  -webkit-transition: all 0.25s cubic-bezier(1, 0.1, 0.16, 0.9);
+  transition: all 0.25s cubic-bezier(1, 0.1, 0.16, 0.9);
+}
+
+html body .header-nav .internos:hover {
+  color: #fff;
+}
+
+html body .header-nav .internos:hover::after {
+  right: 0;
+  height: 1px;
+  background: #d14136;
+}
+
+html body .main-page {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(170, 170, 170, 0.11))), url(/assets/img/fristpizza.jpg);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(170, 170, 170, 0.11)), url(/assets/img/fristpizza.jpg);
+  background-image: url(/assets/img/fristpizza.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+html body .main-page .secondary-text {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem;
+  margin-bottom: 10px;
+}
+
+html body .main-page .third-text {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+html body .main-page .principal-text {
+  font-family: "Lato", sans-serif;
+  font-size: 8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+html body .main-page .paragraph {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */
