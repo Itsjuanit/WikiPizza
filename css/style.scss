@@ -27,7 +27,7 @@ cursive;
 
 html {
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: hidden;
 
     @media (max-width: $mobile-breakpoint) {
         display: flex;
@@ -133,6 +133,123 @@ html {
                     font-family: $main-font;
                     font-size: 1.5rem;
                 }
+            }
+
+            .cardsMain{
+                min-width: 100vh;
+                min-height: 100vh;
+                background-color: $color-negro;
+                padding-top: 50px;
+
+                &-subtitle {
+                    font-family: $second-font;
+                    color: $color-casiBlanco;
+                    font-size: 4rem;
+                    margin-bottom: 50px;
+                    text-align: center;
+                }
+
+                .container {
+                    position: absolute;
+                    height: 300px;
+                    width: 600px;
+                    left: calc(50% - 300px);
+                    display: flex;
+    
+                    .card {
+                        display: flex;
+                        height: 350px;
+                        width: 200px;
+                        background-color: #17141d;
+                        border-radius: 10px;
+                        box-shadow: -1rem 0 3rem #000;
+                        transition: 0.4s ease-out;
+                        position: relative;
+                        left: 0px;
+        
+                        &:not(:first-child) {
+                            margin-left: -50px;
+                        }
+        
+                        &:hover {
+                            transform: translateY(-20px);
+                            transition: 0.4s ease-out;
+        
+                            ~ {
+                                .card {
+                                    position: relative;
+                                    left: 50px;
+                                    transition: 0.4s ease-out;
+                                }
+                            }
+        
+                            .filledbar {
+                                width: 120px;
+                                transition: 0.4s ease-out;
+                            }
+        
+                            .stroke {
+                                stroke-dashoffset: 100;
+                                transition: 0.6s ease-out;
+                            }
+                        }
+        
+                        &:nth-child(1) {
+                            background-image: url(/assets/img/fristpizza.jpg);
+                            background-size: cover;
+                            background-position: center;
+                        }
+        
+                        &:nth-child(2) {
+                            background-image: url(/assets/img/secondpizza.jpg);
+                            background-size: cover;
+                            background-position: center;
+                        }
+        
+                        &:nth-child(3) {
+                            background-image: url(/assets/img/thirdPizza.jpg);
+                            background-size: cover;
+                            background-position: center;
+                        }
+        
+                        &:nth-child(4) {
+                            background-image: url(/assets/img/quarterpizza.jpg);
+                            background-size: cover;
+                            background-position: center;
+                        }
+        
+                        .title {
+                            color:$color-casiBlanco;
+                            font-weight: 500;
+                            position: absolute;
+                            left: 20px;
+                            top: 15px;
+                            font-family: $main-font;
+                            font-size: 1.4rem;
+                        }
+        
+                        .bar {
+                            position: absolute;
+                            top: 100px;
+                            left: 20px;
+                            height: 5px;
+                            width: 150px;
+        
+        
+                            
+                        }
+                        .circle {
+                            position: absolute;
+        
+                            padding: 150px 45px 45px 45px;
+        
+                            img {
+                                border-radius: 100%;
+                            }
+                        }
+                    }
+                }
+    
             }
         }
     }
