@@ -8,5 +8,40 @@ html {
 
     body {
 
+        .map {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 60vw;
+            height: 30vh;
+        }
+
+        #hells {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 60vw;
+            height: 30vh;
+        }
+
+        #rincon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 60vw;
+            height: 30vh;
+        }
+
+        #rocky {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 60vw;
+            height: 30vh;
+        }
     }
 }

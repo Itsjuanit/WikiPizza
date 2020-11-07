@@ -86,7 +86,6 @@
   color: #d14136;
   max-width: 960px;
   width: 100%;
-  height: 80vh;
   background-color: #fff;
   -webkit-box-shadow: 8px 8px 22px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 8px 8px 22px 0px rgba(0, 0, 0, 0.75);
@@ -163,4 +162,64 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-/*# sourceMappingURL=ilpi.css.map */
+
+html body .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 60vw;
+  height: 30vh;
+}
+
+html body #hells {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 60vw;
+  height: 30vh;
+}
+
+html body #rincon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 60vw;
+  height: 30vh;
+}
+
+html body #rocky {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 60vw;
+  height: 30vh;
+}
+/*# sourceMappingURL=rest.css.map */

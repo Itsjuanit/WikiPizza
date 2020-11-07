@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/rest.css" />
     <link rel="stylesheet" href="/css/reset.css" />
+    <!-- MAPA -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
     <script src="https://kit.fontawesome.com/9634c964d7.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
@@ -49,22 +53,23 @@
                             tecnisismos,
                             claros, consisos y amables.
                             Asi es Il Pilonte, un lugar para <strong><em>disfrutar de buena pizza, birra y
-                                amigos.</em></strong>
-                            </p>
-                            <address class="direccion"><i class="fas fa-map-pin"></i>
-                                Av. José Ignacio de la Roza Oeste 1598, J5402DDQ J5402DDQ, San Juan
-                            </address>
+                                    amigos.</em></strong>
+                        </p>
+                        <address class="direccion"><i class="fas fa-map-pin"></i>
+                            Av. José Ignacio de la Roza Oeste 1598, J5402DDQ J5402DDQ, San Juan
+                        </address>
                     </div>
                     <div class="footer-redes">
                         <a href="https://instagram.com/ilpilonte?igshid=15x5jogv7sfmr" target="_blank" class="insta"> <i
                                 class="fab fa-instagram"> </i></a>
                     </div>
+                    <div id="map"></div>
                 </section>
             </div>
 
         </div>
     </main>
-
+    <script src="/JS/ilpi.js"></script>
 </body>
 
 </html>
