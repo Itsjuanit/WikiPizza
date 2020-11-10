@@ -1,4 +1,4 @@
-const hellsCoor = [-31.5320333,-68.5531141];
+let hellsCoor = [-31.5320333,-68.5531141];
 
 const hells = L.map("hells").setView(hellsCoor, 20);
     
